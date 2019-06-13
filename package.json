@@ -1,0 +1,23 @@
+{
+  "name": "twitter-pp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "script.js",
+  "dependencies": {
+    "svg.js": "^2.7.1"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Yopaman/twitter-pp.git"
+  },
+  "author": "Yopaman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Yopaman/twitter-pp/issues"
+  },
+  "homepage": "https://github.com/Yopaman/twitter-pp#readme"
+}
