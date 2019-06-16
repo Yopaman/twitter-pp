@@ -13,10 +13,9 @@ const T = new Twit({
 })
 
 const colors = ["#00cc33", "#00b7cc", "#004ecc", "#5f00cc", "#cc0000", "#cc7700", "#f2ff00"]
+let choosed_color = 0
 
 const j = schedule.scheduleJob('0 0 * * *', () => {
-    let choosed_color = 0
-
     tools.ImportSVG('portal_core.svg').then(svg => {
         tools.ChangePalette(svg, {
             '#00CC33': colors[choosed_color],
@@ -30,7 +29,7 @@ const j = schedule.scheduleJob('0 0 * * *', () => {
                             if (err) console.log(err)
                         })
 
-                        if (choosed_color >= 6) {
+                        if (choosed_color >= colors.length - 1) {
                             choosed_color = 0
                         } else {
                             choosed_color++
